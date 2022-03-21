@@ -41,7 +41,7 @@ function js(){
         prefix: '@@'
     }))
     
-    .pipe(dest('dist'))
+    .pipe(dest('dist/js/'))
 }
 
 function sprite() {
@@ -85,7 +85,17 @@ function images() {
         optimizationLevel: 3 //0 to7 
     }
     ))
-    .pipe(dest('dist/images')); 
+    .pipe(dest('dist/images'))
+}
+
+function media(){
+    return src('src/media/**')
+    .pipe(dest('dist/media'))
+}
+
+function font(){
+    return src('src/fonts/**')
+    .pipe(dest('dist/fonts'))
 }
 
 function serve() {
@@ -96,6 +106,6 @@ function serve() {
     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
     watch('src/js/**.js', series(js)).on('change', sync.reload)
 }
-exports.build = series(clear, scss, html, js, images, sprite)
-exports.serve = series(clear, scss, html, js, images, sprite, serve )
+exports.build = series(clear, scss, html, js, images, sprite, media, font)
+exports.serve = series(clear, scss, html, js, images, sprite, media, font, serve)
 exports.clear = clear
