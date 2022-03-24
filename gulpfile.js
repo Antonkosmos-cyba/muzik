@@ -9,6 +9,8 @@ const imagemin = require ('gulp-imagemin')
 const webp = require ('gulp-webp')
 const webphtml = require('gulp-webp-html')
 const svgsprite = require('gulp-svg-sprite')
+const gulpBabel = require('gulp-babel')
+const gulpUglify = require('gulp-uglify')
 const del = require('del')
 const sync = require('browser-sync').create()
 // import imagemin from 'gulp-imagemin';
@@ -36,13 +38,14 @@ function scss() {
 }
 
 function js(){
-    return src('src/js/**.js')
+    return src('src/js/index.js')
     .pipe(include({
         prefix: '@@'
     }))
-    
+        .pipe(gulpBabel())
+        .pipe(gulpUglify())
     .pipe(dest('dist/js/'))
-}
+    }
 
 function sprite() {
     return src ('src/images/icon/**.svg')

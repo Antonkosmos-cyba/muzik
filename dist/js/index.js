@@ -1,2 +1,1 @@
-alert("hello :)");
-alert("ANTON i MAMA i PAPA");
+alert("hello :)"),alert("ANTON i MAMA i PAPA");
