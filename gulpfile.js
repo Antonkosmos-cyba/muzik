@@ -37,15 +37,15 @@ function scss() {
     .pipe(dest('dist'))
 }
 
-function js(){
-    return src('src/js/index.js')
-    .pipe(include({
-        prefix: '@@'
-    }))
-        .pipe(gulpBabel())
-        .pipe(gulpUglify())
-    .pipe(dest('dist/js/'))
-    }
+// function js(){
+//     return src('src/js/index.js')
+//     .pipe(include({
+//         prefix: '@@'
+//     }))
+//         .pipe(gulpBabel())
+//         .pipe(gulpUglify())
+//     .pipe(dest('dist/js/'))
+//     }
 
 function sprite() {
     return src ('src/images/icon/**.svg')
@@ -109,6 +109,6 @@ function serve() {
     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
     watch('src/js/**.js', series(js)).on('change', sync.reload)
 }
-exports.build = series(clear, scss, html, js, images, sprite, media, font)
-exports.serve = series(clear, scss, html, js, images, sprite, media, font, serve)
+exports.build = series(clear, scss, html, images, sprite, media, font)
+exports.serve = series(clear, scss, html, images, sprite, media, font, serve)
 exports.clear = clear
