@@ -1,12 +1,21 @@
 @import 'second.scss';
 @import 'colors.scss';
 
+body {
+    background-image: url('../../dist/images/don_1.webp');
+    background-size: 100%;
+    background-attachment: fixed;
+    /* padding: 20px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 h1 {
     color: $color-primary-4;
 }
 
-body {
-    background-color: $color-secondary-a-2;
-    width: auto;
-    height: auto;
-}
+// body {
+//     background-color: $color-secondary-a-2;
+//     width: auto;
+//     height: auto;
+// }
