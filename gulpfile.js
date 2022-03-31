@@ -60,6 +60,32 @@ function sprite() {
     .pipe(dest('dist/images/sprite'))
 }
 
+// function svgSpriteBuild() {
+//     return gulp.src('dev/images/Sprite/*.svg')
+//     .pipe(svgmin({
+//     js2svg: {
+//     pretty: true
+//     }
+//     }))
+//     .pipe(cheerio({
+//     run: function ($) {
+//     $('[fill]').removeAttr('fill');
+//     $('[stroke]').removeAttr('stroke');
+//     $('[style]').removeAttr('style');
+//     },
+//     parserOptions: {xmlMode: true}
+//     }))
+//     .pipe(replace('&gt;', '>'))
+//     .pipe(svgSprite({
+//     mode: {
+//     symbol: {
+//     sprite: "sprite.svg",
+//     }
+//     } 
+//     }))
+//     .pipe(gulp.dest('dist/images/sprite/'));
+//     } 
+
 function clear() {
     return del('dist')
 }
