@@ -30,30 +30,13 @@ a {
 }
 
 img {
-    height: 500px;
-    width: 400px;
+    height: 100px;
+    width: 100px;
 }
+
 .icon {
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
 
-    &-twt {
-    fill: blue;
-    }
-
-    &-instgmn {
-      fill: red;
-    }
-  
-    &-whtspp {
-      fill: green;
-    }
-  
-    &-instgmn {
-      fill: rgb(160, 39, 39);
-    }
-  
-    &-block {
-      fill: rgb(188, 188, 236);
-    }
-  }
+}
