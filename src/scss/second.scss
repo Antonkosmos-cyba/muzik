@@ -33,3 +33,27 @@ img {
     height: 500px;
     width: 400px;
 }
+.icon {
+    width: 40px;
+    height: 40px;
+
+    &-twt {
+    fill: blue;
+    }
+
+    &-instgmn {
+      fill: red;
+    }
+  
+    &-whtspp {
+      fill: green;
+    }
+  
+    &-instgmn {
+      fill: rgb(160, 39, 39);
+    }
+  
+    &-block {
+      fill: rgb(188, 188, 236);
+    }
+  }
