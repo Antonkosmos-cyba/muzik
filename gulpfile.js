@@ -9,6 +9,9 @@ const imagemin = require ('gulp-imagemin')
 const webp = require ('gulp-webp')
 const webphtml = require('gulp-webp-html')
 const svgsprite = require('gulp-svg-sprite')
+const svgmin = require('gulp-svgmin');
+const cheerio = require('gulp-cheerio');
+const replace = require('gulp-replace');
 const gulpBabel = require('gulp-babel')
 const gulpUglify = require('gulp-uglify')
 const del = require('del')
@@ -39,52 +42,49 @@ function scss() {
 
 // function js(){
 //     return src('src/js/index.js')
-//     .pipe(include({
-//         prefix: '@@'
-//     }))
-//         .pipe(gulpBabel())
+//     .pipe(include({s
 //         .pipe(gulpUglify())
 //     .pipe(dest('dist/js/'))
 //     }
 
-function sprite() {
-    return src ('src/images/icon/**.svg')
-    .pipe(svgsprite({
-        mode: {
-            stack: {
-                sprite: "sprite.svg",
-                // example: true
-            }
-        },
-    }))
-    .pipe(dest('dist/images/sprite'))
-}
+// function sprite() {
+//     return src ('src/images/icon/**.svg')
+//     .pipe(svgsprite({
+//         mode: {
+//             stack: {
+//                 sprite: "sprite.svg",
+//                 // example: true
+//             }
+//         },
+//     }))
+//     .pipe(dest('dist/images/sprite'))
+// }
 
-// function svgSpriteBuild() {
-//     return gulp.src('dev/images/Sprite/*.svg')
-//     .pipe(svgmin({
-//     js2svg: {
-//     pretty: true
-//     }
-//     }))
-//     .pipe(cheerio({
-//     run: function ($) {
-//     $('[fill]').removeAttr('fill');
-//     $('[stroke]').removeAttr('stroke');
-//     $('[style]').removeAttr('style');
-//     },
-//     parserOptions: {xmlMode: true}
-//     }))
-//     .pipe(replace('&gt;', '>'))
-//     .pipe(svgSprite({
-//     mode: {
-//     symbol: {
-//     sprite: "sprite.svg",
-//     }
-//     } 
-//     }))
-//     .pipe(gulp.dest('dist/images/sprite/'));
-//     } 
+function sprite() {
+    return src('src/images/Sprite/*.svg')
+    .pipe(svgmin({
+    js2svg: {
+    pretty: true
+    }
+    }))
+    // .pipe(cheerio({
+    // run: function ($) {
+    // $('[fill]').removeAttr('fill');
+    // $('[stroke]').removeAttr('stroke');
+    // $('[style]').removeAttr('style');
+    // },
+    // parserOptions: {xmlMode: true}
+    // }))
+    // .pipe(replace('&gt;', '>'))
+    .pipe(svgsprite({
+    mode: {
+    stack: {
+    sprite: "sprite.svg",
+    }
+    } 
+    }))
+    .pipe(dest('dist/images/sprite/'));
+    } 
 
 function clear() {
     return del('dist')
