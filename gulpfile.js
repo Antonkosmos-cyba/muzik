@@ -55,8 +55,8 @@ function clear() {
 }
 
 function images() {
-    return src('src/images/**/*.{jpg,png,jpeg}',
-    '!src/images/sprite/*'
+    return src('src/images/*.{jpg,png,jpeg}',
+    // '!src/images/icon/*'
     )
 
     .pipe(
@@ -66,8 +66,7 @@ function images() {
     )
     .pipe(dest('dist/images'))
 
-    .pipe(src('src/images/**/*.{jpg,png,jpeg}',
-    '!src/images/sprite/*'
+    .pipe(src('src/images/**/*.{jpg,png,jpeg,svg}'
     ))
 
     .pipe(imagemin(
