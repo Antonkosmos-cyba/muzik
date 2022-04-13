@@ -1,22 +1,42 @@
-@import 'second.scss';
-@import 'colors.scss';
-
-body {
-    background-image: url('../../dist/images/don_1.webp');
-    background-size: 100%;
-    background-attachment: fixed;
-    /* padding: 20px; */
-    background-size: cover;
-    background-repeat: no-repeat;
+// Внутри этого файла подключайте все созданные SASS файлы. Именно этот файл и будет преобразован в css.
+@font-face {
+  font-family: "Caveatr-Regular";
+  src: url("/dist/fonts/caveat/Caveat-Regular.ttf") format("truetype");
 }
 
-h1 {
-    color: #4907ff;
+@font-face {
+  font-family: "Caveatr-Bold";
+  src: url("/dist/fonts/caveat/Caveat-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Caveatr-Medium";
+  src: url("/dist/fonts/caveat/Caveat-Medium.ttf") format("truetype");
+}
 
-// body {
-//     background-color: $color-secondary-a-2;
-//     width: auto;
-//     height: auto;
-// }
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/dist/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/dist/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/dist/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@import "variables";
+@import "general";
+@import "atomic";
+@import "colors";
+
+@import "./elements/Header";
+@import "./elements/footer";
+
+@import "./elements/input";
+@import "./elements/btn";
+@import "./elements/card";

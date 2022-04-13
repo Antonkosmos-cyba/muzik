@@ -56,7 +56,7 @@ function clear() {
 
 function images() {
     return src('src/images/*.{jpg,png,jpeg}',
-    // '!src/images/icon/*'
+    '!src/images/icon/*'
     )
 
     .pipe(
