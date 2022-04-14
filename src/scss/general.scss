@@ -6,12 +6,11 @@
 }
 
 html {
-  color: #cacaca;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-family: "Caveat";
   line-height: 1.5;
-
-  background-color: #08020d;
+  color: $color-primary-2;
+  @include bg-image("don_1.webp");
 }
 
 html,
@@ -66,4 +65,9 @@ input::placeholder {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
 }

@@ -1,16 +1,16 @@
 // Внутри этого файла подключайте все созданные SASS файлы. Именно этот файл и будет преобразован в css.
 @font-face {
-  font-family: "Caveatr-Regular";
+  font-family: "Caveat-Regular";
   src: url("/dist/fonts/caveat/Caveat-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Caveatr-Bold";
+  font-family: "Caveat-Bold";
   src: url("/dist/fonts/caveat/Caveat-Bold.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Caveatr-Medium";
+  font-family: "Caveat-Medium";
   src: url("/dist/fonts/caveat/Caveat-Medium.ttf") format("truetype");
 }
 
@@ -30,12 +30,12 @@
 }
 
 @import "variables";
-@import "general";
 @import "atomic";
 @import "colors";
+@import "general";
 
-// @import "./elements/Header";
-// @import "./elements/footer";
+@import "Header";
+@import "footer";
 
 // @import "./elements/input";
 // @import "./elements/btn";
