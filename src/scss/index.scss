@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Caveat-Bold";
-  src: url("/dist/fonts/caveat/Caveat-Bold.ttf") format("truetype");
+  src: local("Caveat-Bold"), url("/dist/fonts/caveat/Caveat-Bold.ttf") format("truetype");
 }
 
 @font-face {

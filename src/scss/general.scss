@@ -7,10 +7,12 @@
 
 html {
   font-size: 18px;
-  font-family: "Caveat";
+  font-family: "Caveat-Regular";
   line-height: 1.5;
   color: $color-primary-2;
-  @include bg-image("don_1.webp");
+ 
+  // background-color: $color-secondary-a-4;
+  // background-image: url("./dist/images/don_1.webp");
 }
 
 html,
@@ -43,6 +45,10 @@ button {
     margin: 0 auto;
     padding: 0 20px 0 20px;
   }
+}
+
+#content{
+  @include bg-image("don_1.jpg")
 }
 
 ul {
