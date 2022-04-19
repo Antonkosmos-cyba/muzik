@@ -1,32 +1,32 @@
 // Внутри этого файла подключайте все созданные SASS файлы. Именно этот файл и будет преобразован в css.
 @font-face {
   font-family: "Caveat-Regular";
-  src: url("/dist/fonts/caveat/Caveat-Regular.ttf") format("truetype");
+  src: url("./fonts/caveat/Caveat-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Caveat-Bold";
-  src: local("Caveat-Bold"), url("/dist/fonts/caveat/Caveat-Bold.ttf") format("truetype");
+  src: local("Caveat-Bold"), url("./fonts/caveat/Caveat-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Caveat-Medium";
-  src: url("/dist/fonts/caveat/Caveat-Medium.ttf") format("truetype");
+  src: url("./fonts/caveat/Caveat-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-Regular";
-  src: url("/dist/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("./fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-Bold";
-  src: url("/dist/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("./fonts/roboto/Roboto-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-Medium";
-  src: url("/dist/fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  src: url("./fonts/roboto/Roboto-Medium.ttf") format("truetype");
 }
 
 @import "variables";

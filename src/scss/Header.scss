@@ -1,6 +1,6 @@
 header{
     margin: 30px;
-}
+
 
 .logo {
     height: 80px;
@@ -12,4 +12,12 @@ header{
         // border: 1px solid $color-primary-4;
         border-radius: 50%;
     }
+}
+
+ul {
+    width: 600px;
+    font-family: "Caveat-Medium";
+    font-size: 2em;
+}
+
 }
