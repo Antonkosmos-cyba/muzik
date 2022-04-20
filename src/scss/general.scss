@@ -47,8 +47,8 @@ button {
   }
 }
 
-#content{
-  @include bg-image("don_1.jpg")
+body{
+  @include bg-image("don_1.webp")
 }
 
 ul {

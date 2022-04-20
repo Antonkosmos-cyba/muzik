@@ -89,10 +89,10 @@
 // background, media, gradient
 
 @mixin bg-image($image) {
-  background-image: url("/dist/images/");
+  background-image: url("/dist/images/#{$image}");
   background-position: center;
   background-size: cover;
-  // background-attachment: fixed;
+  background-attachment: fixed;
   // background-repeat: no-repeat;
 }
 
