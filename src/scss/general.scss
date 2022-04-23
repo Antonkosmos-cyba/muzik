@@ -12,7 +12,7 @@ html {
   color: $color-primary-2;
  
   // background-color: $color-secondary-a-4;
-  // background-image: url("./dist/images/don_1.webp");
+  @include bg-image("don_1.webp")
 }
 
 html,
@@ -32,10 +32,6 @@ button {
   padding: 0;
 }
 
-// section {
-//   padding: 100px 0 0 0;
-// }
-
 .container {
   max-width: 1240px;
   margin: 0 auto;
@@ -45,10 +41,6 @@ button {
     margin: 0 auto;
     padding: 0 20px 0 20px;
   }
-}
-
-body{
-  @include bg-image("don_1.webp")
 }
 
 ul {
