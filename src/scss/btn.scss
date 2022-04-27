@@ -1,7 +1,7 @@
 .btn {
-   // backdrop-filter: blur(20px) brightness(130%);
+  // backdrop-filter: blur(20px) brightness(130%);
    // opacity: 0.8;
-  background: rgba(19, 154, 17, 0.5);
+  background: rgba(244, 249, 243, 0.5);
   width: 180px;
   height: 60px;
   text-align: center;
@@ -17,5 +17,6 @@
   // text-transform: uppercase;
   align-items: center;
   justify-content: center;
+  color: $color-secondary-a-2;
 }
 }
