@@ -109,3 +109,7 @@
 @mixin bg-footer {
   @include col-gradient($red, $purple);
 }
+
+@mixin bg-color ($color) {
+  background-color: $color;
+}

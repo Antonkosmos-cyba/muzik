@@ -5,20 +5,20 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+height: 100%;
+}
+
 html {
   font-size: 18px;
   font-family: "Roboto-Regular";
   line-height: 1.5;
   color: $color-primary-2;
- 
+
   // background-color: $color-secondary-a-4;
   @include bg-image("don_1.webp")
 }
-
-// #content{
-//   @include bg-image("don_1.webp");
-//   height: 100vh;
-// }
 
 html,
 body,
@@ -37,16 +37,32 @@ button {
   padding: 0;
 }
 
-.container {
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  }
+
+.content {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0;
+  flex: 1 0 auto;
+
 
   @include set-media(425px) {
     margin: 0 auto;
     padding: 0 20px 0 20px;
   }
 }
+
+.header {
+  flex: 0 0 auto;
+  } 
+
+  .footer {
+    flex: 0 0 auto;
+    } 
 
 ul {
   list-style: none;
