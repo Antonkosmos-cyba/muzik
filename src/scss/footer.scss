@@ -1,6 +1,8 @@
 .foto-fut {
-    width: 80px;
+    min-width: 80px;
     height: 100px;
+    margin-right: 10px;
+    border: 6px $color-primary-3 inset;
 }
 
 .icon {
@@ -8,6 +10,7 @@
 & img{
     height: 50px;
     width: 50px;
+    margin-left: 20px;
 }
 }
 
@@ -20,3 +23,8 @@
 .heig{
     height: 100px;
 } 
+
+.box {
+    align-items: center;
+    font-size: 1.5em;
+}
