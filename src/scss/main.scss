@@ -1,17 +1,22 @@
 .content {
     top: 120px;
     padding: 15px;
+    .title-main{
+        width: fit-content;
+        text-shadow: #000 1px 1px;
+    }
 
 & h1 {
     font-family: "Caveat-Bold";
     font-size: 5em;
+    line-height: 1;
     // background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
 }
 &  h2 {
     // background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(5px);
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 &-text { 
     padding: 20px;
