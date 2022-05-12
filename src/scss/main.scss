@@ -1,9 +1,11 @@
 .content {
     top: 120px;
     padding: 15px;
-    .title-main{
+    .title-main, 
+    .sub-title{
         width: fit-content;
-        text-shadow: #000 1px 1px;
+        text-shadow: $color-primary-2 2px 2px;
+        color: #fff;
     }
 
 & h1 {
@@ -24,10 +26,10 @@
     backdrop-filter: blur(5px);
     & img {
         width: 300px;
-        height: 240px;
+        height: 340px;
         float: left;
         margin: 0px 20px 20px 0px;
-        box-shadow: $color-secondary-a-1 10px 10px 10px;
+        box-shadow: $color-primary-2 10px 10px 10px;
     }
 
 & p  {
