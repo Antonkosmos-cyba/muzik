@@ -18,6 +18,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     height: 120px;
+    width: 100%;
     padding: 10px;
 }
 
@@ -33,7 +34,8 @@
 .anton {
     line-height: normal;
     flex-grow: 1;
-
+    text-align: end;
+    vertical-align: middle;
     & p {
         font-size: 1em;
     }
