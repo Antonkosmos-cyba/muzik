@@ -32,10 +32,9 @@
 }
 
 .anton {
-    line-height: normal;
+    line-height: 100px;
     flex-grow: 1;
     text-align: end;
-    vertical-align: middle;
     & p {
         font-size: 1em;
     }
