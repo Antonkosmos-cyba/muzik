@@ -1,6 +1,5 @@
 .content {
     top: 120px;
-    padding: 15px;
     .title-main, 
     .sub-title{
         width: fit-content;
@@ -35,6 +34,16 @@
 & p  {
     font-family: "Caveat-Bold";
     font-size: 2em;
+    line-height: 1;
+}
+& span {
+    font-size: 1.3em;
+    text-shadow: #000 1px 1px;
+}
+& a {   
+    color:$color-primary-2;
+    text-decoration:underline;
+   
 }
 }
 }
