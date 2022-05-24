@@ -40,22 +40,22 @@ function scss() {
     .pipe(dest('dist'))
 }
 
-// function js(){
-//     return src('src/js/index.js')
-//     .pipe(include({
-//         prefix: '@@'
-//     }))
-//         .pipe(gulpBabel())
-//         .pipe(gulpUglify())
-//     .pipe(dest('dist/js/'))
-//     }
+function js(){
+    return src('src/js/script.js')
+    // .pipe(include({
+    //     prefix: '@@'
+    // }))
+        .pipe(gulpBabel())
+        .pipe(gulpUglify())
+    .pipe(dest('dist/js/'))
+    }
 
 function clear() {
     return del('dist')
 }
 
 function images() {
-    return src('src/images/*.{jpg,png,jpeg}',
+    return src('src/images/**/*.{jpg,png,jpeg}',
     '!src/images/icon/*'
     )
 
@@ -98,6 +98,6 @@ function serve() {
     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
     // watch('src/js/**.js', series(js)).on('change', sync.reload)
 }
-exports.build = series(clear, images, media, font, scss, html)
-exports.serve = series(clear, images, media, font, scss, html, serve)
+exports.build = series(clear, images, media, font, js, scss, html)
+exports.serve = series(clear, images, media, font, js, scss, html, serve)
 exports.clear = clear
