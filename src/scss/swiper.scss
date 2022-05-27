@@ -1,4 +1,7 @@
 //todo ЧЕРНОВИК с плюшками
+.swiper-title {
+margin-bottom: 50px;
+}
 
 .image-slider_image {
     margin: 10px auto;
@@ -16,13 +19,8 @@
   .image-slider .swiper-button-prev::after,
   .image-slider .swiper-button-next::after {
     color: #fff;
-    font-size: 30px;
+    font-size: 4em;
   }
-  
-  Главная
-  Галерея
-  Фонотека
-  Цветы Кубани
   /* Стили пагинации и буллетов*/
   .image-slider .swiper-pagination {
     bottom: 30vh;
