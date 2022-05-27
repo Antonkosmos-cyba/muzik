@@ -1,6 +1,7 @@
 //todo ЧЕРНОВИК с плюшками
 .swiper-title {
-margin-bottom: 50px;
+margin-bottom: 20px;
+font-size: 4em;
 }
 
 .image-slider_image {
@@ -23,11 +24,9 @@ margin-bottom: 50px;
   }
   /* Стили пагинации и буллетов*/
   .image-slider .swiper-pagination {
-    bottom: 30vh;
+    bottom: 130px;
   }
   .subtitle {
-    margin-top: 2vh;
-    /* margin-bottom: 2vh; */
     font-size: 1,5em;
     text-align: center; 
   }
