@@ -18,24 +18,42 @@
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     height: 120px;
-    width: 100%;
+    width: 100vw;
     padding: 10px;
+    @media(max-width: 768px) {
+        background-color: rgba(255, 255, 255, 0); 
+    }
 }
 
 .heig{
     height: 100px;
+    flex-wrap: wrap;
 } 
 
 .box {
     align-items: center;
     font-size: 1.5em;
+    // width: fit-content;
+    
+
+@media (max-width: 1150px) {
+	.icon-title{
+       display: none; 
+    }
+}
 }
 
 .anton {
-    line-height: 100px;
+    line-height:100px;
     flex-grow: 1;
+    flex-shrink: 1;
     text-align: end;
+    @media(max-width: 426px){
+        line-height: 1;
+    }
     & p {
+
         font-size: 1em;
     }
+   
 }

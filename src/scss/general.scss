@@ -50,12 +50,16 @@ button {
   margin: 0 auto;
   padding: 0px;
   flex: 1 0 auto;
-
-
-  @include set-media(425px) {
-    margin: 0 auto;
-    padding: 0 20px 0 20px;
+  @media (max-width: 1024px){
+    margin: 10px;
   }
+
+
+  @include set-media(1024px) {
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+  }
+
 }
 
 .header {

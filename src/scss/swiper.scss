@@ -27,8 +27,13 @@ font-size: 4em;
     bottom: 130px;
   }
   .subtitle {
-    font-size: 1,5em;
-    text-align: center; 
+    margin: 0 auto;
+    font-size: 1.5em;
+    font-weight: 700;
+    width: fit-content;
+    backdrop-filter: blur(5px);
+    text-align: center;
+  
   }
   /* Размеры буллетов */
   .image-slider .swiper-pagination-bullet {
