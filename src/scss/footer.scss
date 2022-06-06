@@ -42,7 +42,7 @@
 
 @media (max-width: 1150px) {
 	.icon-title{
-       display: none; 
+        display: none; 
     }
 }
 }
@@ -53,10 +53,9 @@
     flex-shrink: 0;
     text-align: end;
     @media(max-width: 426px){
-        line-height: 1.5;
+        padding: auto 0px 10px;
     }
     & p {
-
         font-size: 1em;
     }
    
