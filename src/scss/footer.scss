@@ -11,6 +11,10 @@
     height: 50px;
     width: 50px;
     margin-left: 20px;
+
+    @media (max-width: 426px) {
+        margin-left: 10px;
+    }
 }
 }
 
@@ -27,7 +31,7 @@
 
 .heig{
     height: 100px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 } 
 
 .box {
@@ -46,10 +50,10 @@
 .anton {
     line-height:100px;
     flex-grow: 1;
-    flex-shrink: 1;
+    flex-shrink: 0;
     text-align: end;
     @media(max-width: 426px){
-        line-height: 1;
+        line-height: 1.5;
     }
     & p {
 
