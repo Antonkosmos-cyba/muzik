@@ -20,7 +20,7 @@
 
 @mixin h2 {
   @include set-header(38px, 57px, bold);
-  text-transform: uppercase;
+  text-transform: uppercase;width: 100%;
 }
 
 @mixin h2-mob {

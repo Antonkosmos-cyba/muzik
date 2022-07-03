@@ -9,6 +9,7 @@ html,
 body {
 height: 100vh;
 width: 100vw;
+
 }
 
 html {
@@ -44,11 +45,11 @@ button {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: min-content;
+  width: 100%;
   }
 
 .content {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0px;
   flex: 1 0 auto;
