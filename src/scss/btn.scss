@@ -12,9 +12,11 @@
       }
     }
   & a {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 11px;
+    padding-right: 3px;
     color: $color-primary-2;
   }
 
@@ -23,12 +25,15 @@
   }
 
   @media (max-width: 426px) {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    padding: 10px 0;
+    // padding: 10px 0;
+    margin: auto 0;
 
-  i{margin-right: 0;
+  i{
+    margin-right: 0;
+    padding: 5px 0;
   }
   span{
     display: none;
