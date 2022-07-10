@@ -1,0 +1,75 @@
+section {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    border: 15px groove rgb(176, 235, 179);
+
+}
+
+img {
+    display: block;
+    width: 100%;
+    /* border-radius: 10px; */
+}
+
+header {
+    background-color: rgb(4, 116, 4);
+    max-height: max-content;
+    overflow: hidden;
+    opacity: 0.6;
+    /* border-radius: 10px; */
+}
+
+.left {
+    float: left;
+    width: 190px;
+
+}
+
+.right {
+    padding: 30px 0;
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+
+@media (max-width:425px) {
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        float: none;
+    }
+}
+
+#play {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    background: url("./foto/ple.png") center center no-repeat;
+}
+
+#play:focus {
+    outline: none;
+}
+
+
+#pause {
+    background: url("./foto/pauza.png");
+    height: 60px;
+    width: 60px;
+    border: 0;
+    margin-left: 11px;
+}
+
+#pause:focus {
+    outline: none;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: rgb(255, 254, 254);
+    font-size: 26px;
+    margin-left: 10px;
+}
