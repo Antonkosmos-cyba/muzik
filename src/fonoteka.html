@@ -14,35 +14,19 @@
     <div class="wrapper">
         @@include('parts/header.html')
         <main class="content">
-            <section>
-                <img src="./images/irina.webp">
-                <header>
-                    <div class='left'>
-                        <h1>Ирина Бруханчик</h1>
-                        <h1>песня <i>От души желаю вам</i></h1>
-                    </div>
-                    <div class='right'>
-                        <audio id="demo" src="./media/zdob-si-zdub-dj-vasiliy_(tetamix.org).mp3">
-                        </audio>
-                        <button id='play' type="submit"></button>
-                        <button id='pause'></button>
-                    </div>
-                </header>
-            </section>
-
-            <script>
-                document.getElementById("play").onclick = function () {
-                    document.getElementById('demo').play();
-                }
-
-                document.getElementById("pause").onclick = function () {
-                    document.getElementById('demo').pause();
-                }
-            </script>
+            @@include('parts/music.html')
         </main>
         @@include('parts/footer.html')
     </div>
-    <script src="./js/script.js"></script>
+    <script>
+        document.getElementById('play').onclick = function () {
+            document.getElementById("demo").play();
+        }
+
+        document.getElementById('pause').onclick = function () {
+            document.getElementById("demo").pause();
+        }
+    </script>
 </body>
 
 </html>

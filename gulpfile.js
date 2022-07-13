@@ -41,7 +41,7 @@ function scss() {
 }
 
 function js(){
-    return src('src/js/script.js')
+    return src('src/js/index.js')
     // .pipe(include({
     //     prefix: '@@'
     // }))
