@@ -6,10 +6,16 @@
                         <div class="name">песня <i>От души желаю вам</i></div>
                     </div>
                     <div class='right'>
-                        <audio id="demo" src="./media/zdob-si-zdub-dj-vasiliy_(tetamix.org).mp3">
+                        <audio id="demo" src="./media/zdob-si-zdub-dj-vasiliy_(tetamix.org).mp3
+                        ">
                         </audio>
                         <button id='play' type="submit"></button>
                         <button id='pause'></button>
+                        <script>
+                            document.getElementById('pause').onclick = function () {
+                                document.getElementById("demo").pause();
+                            }
+                        </script>
                     </div>
                 </div>
             </section>
