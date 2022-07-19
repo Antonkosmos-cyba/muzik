@@ -13,6 +13,7 @@ section {
 
 
 .info {
+    display: flex;
     background-color: rgb(4, 116, 4);
     max-height: max-content;
     overflow: hidden;
@@ -21,15 +22,18 @@ section {
 }
 
 .left {
-    float: left;
-margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // float: left;
+    // margin-top: 30px;
     width: 60%;
 
 }
 
 .right {
     padding: 30px 0;
-    float: left;
+    // float: left;
     width: 40%;
     text-align: center;
 }
@@ -54,13 +58,18 @@ margin: auto 0;
     color: $color-primary-2;
     font-size: 3em;
     &:hover {
-        color:  rgb(176, 235, 179);
+        color: rgb(3, 86, 5);
         border: 5px groove $color-primary-2;
     }
 }
 
+#play {
+    margin-right: 7px;
+}
+
 .singer {
     font-size: 1.5em;
+    margin-bottom: 5px;
     font-family: 'Caveat-Medium';
     color: rgb(255, 254, 254);
     margin-left: 10px;
