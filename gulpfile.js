@@ -16,7 +16,15 @@ const gulpBabel = require('gulp-babel')
 const gulpUglify = require('gulp-uglify')
 const del = require('del')
 const sync = require('browser-sync').create()
+
 // import imagemin from 'gulp-imagemin';
+function htmlMedia(){
+    return src('src/parts/slider2.html')
+    .pipe(include({
+        prefix: '@@'
+    }))
+}
+
 function html(){
     return src('src/**.html')
     .pipe(include({
@@ -98,6 +106,6 @@ function serve() {
     watch('src/scss/**.scss', series(scss)).on('change', sync.reload)
     // watch('src/js/**.js', series(js)).on('change', sync.reload)
 }
-exports.build = series(clear, images, media, font, js, scss, html)
-exports.serve = series(clear, images, media, font, js, scss, html, serve)
+exports.build = series(clear, images, media, font, js, scss, htmlMedia, html)
+exports.serve = series(clear, images, media, font, js, scss, htmlMedia, html, serve)
 exports.clear = clear

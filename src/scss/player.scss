@@ -48,8 +48,8 @@ section {
 //     }
 // }
 
-#play,
-#pause{
+.play,
+.pause{
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -62,7 +62,7 @@ section {
     }
 }
 
-#play {
+.play {
     margin-right: 7px;
 }
 
@@ -71,14 +71,16 @@ section {
     margin-bottom: 5px;
     font-family: 'Caveat-Medium';
     color: rgb(255, 254, 254);
-    margin-left: 10px;
+    text-align: start;
+    padding-left: 10px;
 }
 
 .name {
     font-size: 1em;
     font-family: 'Roboto-Medium';
     color: rgb(255, 254, 254);
-    margin-left: 10px;
+    text-align: start;
+    padding-left: 10px;
 }
 
 // image {
