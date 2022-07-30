@@ -1,0 +1,28 @@
+            <section>
+                <image class='autor' src="./images/cv/foto10.webp">
+                    <div class="info">
+                        <div class='left'>
+                            <div class="singer">Ирина Бруханчик</div>
+                            <div class="name">"новая песьня"</div>
+                        </div>
+                        <div class='right'>
+                            <audio id="demo12" src="./media/12.mp3">
+                            </audio>
+                            <button id='play12' class="play">
+                                <i class="fa-solid fa-circle-play"></i>
+                            </button>
+                            <button id='pause12' class="pause">
+                                <i class="fa-solid fa-circle-pause"></i>
+                            </button>
+                        </div>
+                        <script>
+                            document.getElementById('play12').onclick = function () {
+                                document.getElementById("demo12").play();
+                            };
+
+                            document.getElementById('pause12').onclick = function () {
+                                document.getElementById("demo12").pause();
+                            }
+                        </script>
+                    </div>
+            </section>
